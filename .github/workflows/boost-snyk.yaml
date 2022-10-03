@@ -26,5 +26,6 @@ jobs:
           registry_module: scanners/boostsecurityio/snyk-scanner
           api_token: ${{ secrets.BOOST_API_TOKEN }}
           api_endpoint: https://api.dev.boostsec.io
+          additional_args: --registry https://github.com/boostsecurityio/scanner-registry.git#debug-snyk
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
