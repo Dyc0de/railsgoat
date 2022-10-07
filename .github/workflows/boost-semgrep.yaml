@@ -26,4 +26,5 @@ jobs:
           registry_module: scanners/boostsecurityio/semgrep-scanner
           api_token: ${{ secrets.BOOST_API_TOKEN }}
           api_endpoint: https://api.dev.boostsec.io
-          additional_args: --registry https://github.com/boostsecurityio/scanner-registry.git#bst-1866-created-semgrep-module
+          log_level: TRACE
+          additional_args: --registry https://github.com/boostsecurityio/scanner-registry.git#BST-2077-update-semgrep
