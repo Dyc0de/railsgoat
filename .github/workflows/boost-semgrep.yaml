@@ -29,4 +29,4 @@ jobs:
           log_level: TRACE
           additional_args: --registry https://github.com/boostsecurityio/scanner-registry.git#BST-2077-update-semgrep
         env:
-          SEMGREP_RULES: p/ci
+          SEMGREP_RULES: "p/security-audit p/secrets"
